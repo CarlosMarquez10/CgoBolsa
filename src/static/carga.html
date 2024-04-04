@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Descargas.css" />
+    <link rel="stylesheet" href="./index.css">
+
+    <title>Cargar Archivos</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="container__navbar">
+        <nav class="navbar_container">
+            <!-- logo -->
+            <div class="cont-logo">
+                <div class="cont-logo_cgo">
+                    <img class="img_logoCgo" src="./user_logo.png" alt="">
+                </div>
+                <div class="titlie_menu">
+                    <span>Inicio</span>
+                </div>
+            </div>
+            <div class="Cgo_logo">
+                <a href="./delete" class="cont-eliminar">
+                    <div class="logo__nav" href="./delete">
+                        <img class="imglogodelete" src="./delete.png" alt="" />
+                    </div>
+                    <span class="eliminartext ">Eliminar</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- container root -->
+    <div class="container__descargas">
+        <!-- contenedor user name login -->
+        <div class="container_user">
+            <div class="cont_user">
+                <div class="cont-logo_cgo">
+                    <img class="img_logoCgo" src="./user_logo.png" alt="">
+                </div>
+                <div class="cont_user_name">
+                    <span id="name_user"></span>
+                </div>
+            </div>
+        </div>
+        <!-- titulo -->
+        <div class="container__title">
+            <h2>Carga de Archivos</h2>
+        </div>
+        <div class="container">
+            <div class="container-left hidden" id="container-left">
+                <div class="spinner">
+                    <main style="background-color: white;">
+                        <svg class="ap" viewBox="0 0 128 256" width="128px" height="230px"
+                            xmlns="http://www.w3.org/2000/svg" style="background-color: white;">
+                            <defs>
+                                <linearGradient id="ap-grad1" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="hsl(0,90%,55%)" />
+                                    <stop offset="100%" stop-color="hsl(350,90%,55%)" />
+                                </linearGradient>
+                                <linearGradient id="ap-grad2" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="hsl(0,90%,55%)" />
+                                    <stop offset="50%" stop-color="hsl(350,90%,55%)" />
+                                    <stop offset="100%" stop-color="hsl(0,90%,55%)" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="ap__ring" r="56" cx="64" cy="192" fill="none" stroke="#ffffff"
+                                stroke-width="16" stroke-linecap="round" />
+                            <circle class="ap__worm1" r="56" cx="64" cy="192" fill="none" stroke="url(#ap-grad1)"
+                                stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 263.89" />
+                            <path class="ap__worm2"
+                                d="M120,192A56,56,0,0,1,8,192C8,161.07,16,8,64,8S120,161.07,120,192Z" fill="none"
+                                stroke="url(#ap-grad2)" stroke-width="16" stroke-linecap="round"
+                                stroke-dasharray="87.96 494" />
+                        </svg>
+                        <Loading class="loading_cont">Aplicanco filtros...</Loading>
+                    </main>
+
+                </div>
+            </div>
+            <!-- container form -->
+            <div class="container-right">
+                <form class="form-group" action="/upload" method="post" enctype="multipart/form-data">
+                    <div class="container-form gcont1">
+                        <label for="file1" class="label">Archivo CTRL</label>
+                        <div id="dropzone1" class="dropzone zonefile">
+                            Arrastre y suelte aquí los archivos... (o haga clic para
+                            seleccionar archivo)
+                        </div>
+                        <input type="file" id="file1" name="file1" accept=".csv" class="form-control-file"
+                            style="display: none" />
+                    </div>
+                    <div class="container-form gcont3">
+                        <label for="file2" class="label">Archivo Medidores</label>
+                        <div id="dropzone2" class="dropzone zonefile">
+                            Arrastre y suelte aquí los archivos... (o haga clic para
+                            seleccionar archivo)
+                        </div>
+                        <input type="file" id="file2" name="file2" accept=".csv" class="form-control-file"
+                            style="display: none" />
+                    </div>
+                    <div class="container-form gcont2">
+                        <label for="file3" class="label">Archivo Filtro Cens</label>
+                        <div id="dropzone3" class="dropzone zonefile">
+                            Arrastre y suelte aquí los archivos... (o haga clic para
+                            seleccionar archivo)
+                        </div>
+                        <input type="file" id="file3" name="file3" accept=".csv" class="form-control-file"
+                            style="display: none" />
+                    </div>
+                    <div class="btnenviarfiltro">
+                        <button type="submit" class="btnfiltro" id="btnfiltro">
+                            Aplicar Filtros
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <!-- logo inmel -->
+        <div class="imginmel">
+            <img src="./logo-imel.svg" alt="" srcset="" />
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <script src="./index.js" type="module"></script>
+    <script src="./descargas.js" type="module"></script>
+</body>
+
+</html>

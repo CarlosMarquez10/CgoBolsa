@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./delete.css" />
+
+    <title>Eliminar archivos</title>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <div class="container__navbar">
+      <nav class="navbar_container">
+        <!-- logo -->
+        <a href="./cargar" class="cont-logo">
+          <div class="cont-logo_cgo">
+            <img class="img_logoCgo" src="./user_logo.png" alt="" />
+          </div>
+          <div class="titlie_menu">
+            <span>CGO</span>
+          </div>
+        </a>
+        <div class="Cgo_logo">
+          <a href="./delete" class="cont-eliminar">
+            <div class="logo__nav" href="./delete">
+              <img class="imglogodelete" src="./delete.png" alt="" />
+            </div>
+            <span class="eliminartext">Eliminar</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- container root -->
+    <div class="container__descargas">
+      <!-- contenedor user name login -->
+      <div class="container_user">
+        <div class="cont_user">
+          <div class="cont-logo_cgo">
+            <img class="img_logoCgo" src="./user_logo.png" alt="" />
+          </div>
+          <div class="cont_user_name">
+            <span id="name_user"></span>
+          </div>
+        </div>
+      </div>
+      <!--  contenedor de descargas -->
+      <div class="title-eliminar">
+        <h1>Archivos cargados</h1>
+      </div>
+      <div class="container-contenido">
+        <div class="continer-head">
+          <span>Nombre del archivo</span>
+          <div class="container-boton">
+            <button id="eliminarArchivos" class="eliminarArchivos">
+              <img class="imgdelete" src="./delete.png" alt="" />
+            </button>
+          </div>
+        </div>
+        <div id="archivoContainer" class="archivoContainer">
+          <!-- container the of  show the file -->
+        </div>
+        <div class="count-file">
+          <span>Total de archivos: </span
+          ><span id="countfiles" class="countfiles"></span>
+        </div>
+      </div>
+
+      <div class="cont-text-message">
+        <span
+          ><b>Por favor, recuerda</b>: Los archivos deben ser eliminados
+          únicamente durante los fines de semana.</span
+        >
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <script src="./eliminar.js" type="module"></script>
+  </body>
+</html>

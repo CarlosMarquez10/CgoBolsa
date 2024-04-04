@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+  <body>
+    <div class="container-root_login">
+      <div class="container_title">
+        <h1>CREAR BOLSA</h1>
+      </div>
+      <div class="container_title_login">
+        <h4>Cgo-Adm</h4>
+      </div>
+      <form class="container__login">
+        <div class="cont_message_error">
+          <span id="messageError" class="messageError"></span>
+        </div>
+        <div class="inputArea">
+          <input type="text" id="username" class="inputField" placeholder=" " />
+          <label for="username" class="inputLabel">Usuario</label>
+        </div>
+        <div class="inputArea">
+          <input
+            type="password"
+            id="password"
+            class="inputField"
+            placeholder=" "
+          />
+          <label for="password" class="inputLabel">Contraseña</label>
+        </div>
+        <div class="container_btnlogin">
+          <button id="btn-login" class="btn-login">Ingresar</button>
+        </div>
+      </form>
+      <div class="container_logo">
+        <img src="./logo_inmel_white.svg" alt="Logo de la empresa" />
+      </div>
+    </div>
+
+    <script src="./Login.js" type="module"></script>
+  </body>
+</html>

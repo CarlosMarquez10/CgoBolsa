@@ -1,0 +1,500 @@
+body {
+  width: 98vw;
+  height: 92vh;
+  padding: 10px;
+  background-color: #202020;
+  display: flex;
+  justify-content: normal;
+  align-items: center;
+}
+
+.container__descargas {
+  width: 1420px;
+  height: 630px;
+  padding: 10px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+}
+
+
+/* estlios container user name login */
+
+.container__descargas_body{
+  width: 600px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.container_user{
+  width: 90vw;
+  height: 40px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+.cont_user{
+  width: 35%;
+  height: 40px;
+  padding-right: 10px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #50505050;
+  border-radius: 10px;
+}
+
+.cont-logo_cgo{
+  width: 40px;
+  height: 40px;
+  margin: 0px !important;
+  text-decoration: none;
+}
+
+.cont_user_name{
+  width: 250px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name_user{
+  font-size: 1.rem;
+}
+
+.cont_user_name span{
+  color: white;
+}
+
+.messageError{
+  color: red !important;
+  font-weight: 500;
+}
+
+
+/* estilos del navbar */
+
+.container__navbar {
+  width: 50px;
+  height: 650.1px;
+  /* margin-left: 5px; */
+  margin-right: 10px;
+  padding: 0px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #d60812;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 200;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.container__navbar:hover {
+  width: 180px;
+  height: 650.1px;
+  margin-right: 10px;
+  padding: 0px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  /* background-color: #606060; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+  box-shadow: 2px 0px 2px rgb(255, 68, 99);
+  transition: all 0.5s ease-in-out;
+}
+
+.container__navbar:hover span {
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+
+.container__navbar:hover .cont-logo_cgo {
+  padding-left: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.container__navbar:hover .cont-eliminar {
+  padding-left: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.container__navbar:hover .eliminartext {
+  display: block !important;
+  transition: all 2s ease-in-out;
+}
+
+.navbar_container {
+  width: 90%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: grey; */
+}
+
+.Cgo_logo {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Cgo_logo:hover {
+  background-color: rgb(252, 129, 152);
+  border-bottom-right-radius: 35px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition: all 0.5s ease-in;
+}
+
+.cont-logo:hover{
+  background-color: rgb(252, 129, 152);
+  border-bottom-right-radius: 35px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition: all 0.5s ease-in;
+}
+
+.img_logoCgo {
+  width: 40px;
+  height: 35px;
+
+
+}
+
+.cont-eliminar {
+  width: 150px;
+  height: 50px;
+  padding-left: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.imglogodelete {
+  width: 40px;
+  height: 35px;
+  /* margin-left: 7px; */
+}
+
+.logo__nav {
+  width: 40px;
+  height: 35px;
+  text-decoration: none;
+}
+
+.eliminartext {
+  color: white;
+  font-size: 1rem;
+  padding-left: 5px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none !important;
+}
+
+/* inemel logo */
+
+.imginmel {
+  width: 90%;
+  height: 35px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.imginmel>img {
+  width: 60px;
+  height: 60px;
+}
+
+
+.cont-logo {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.5s ease-in;
+}
+
+.cont-logo_cgo {
+  display: flex;
+  padding-left: 55px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+.titlie_menu {
+  color: white;
+  padding-right: 10px;
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+/* estilos btn descargar */
+
+.btnDescargar {
+  width: 250px;
+  height: 50px;
+  background-color: #d60812;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: all 0.7s ease-in-out;
+}
+
+.btnDescargar:hover {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(252, 53, 53);
+  box-shadow: 1px 1px 4px 1px red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.7s ease-in-out;
+}
+
+
+/* spinner of the Dowland */
+
+.hidden{
+  display: none !important;
+}
+
+@keyframes ldio-3kngbr3pjus {
+  0% {
+    opacity: 1;
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1.5, 1.5);
+  }
+
+  100% {
+    opacity: 0;
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1, 1);
+  }
+}
+
+.ldio-3kngbr3pjus div>div {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #ff727d;
+  animation: ldio-3kngbr3pjus 1s linear infinite;
+}
+
+.ldio-3kngbr3pjus div:nth-child(1)>div {
+  left: 148px;
+  top: 88px;
+  animation-delay: -0.875s;
+}
+
+.ldio-3kngbr3pjus>div:nth-child(1) {
+  transform: rotate(0deg);
+  transform-origin: 160px 100px;
+}
+
+.ldio-3kngbr3pjus div:nth-child(2)>div {
+  left: 130px;
+  top: 130px;
+  animation-delay: -0.75s;
+}
+
+.ldio-3kngbr3pjus>div:nth-child(2) {
+  transform: rotate(45deg);
+  transform-origin: 142px 142px;
+}
+
+.ldio-3kngbr3pjus div:nth-child(3)>div {
+  left: 88px;
+  top: 148px;
+  animation-delay: -0.625s;
+}
+
+.ldio-3kngbr3pjus>div:nth-child(3) {
+  transform: rotate(90deg);
+  transform-origin: 100px 160px;
+}
+
+.ldio-3kngbr3pjus div:nth-child(4)>div {
+  left: 46px;
+  top: 130px;
+  animation-delay: -0.5s;
+}
+
+.ldio-3kngbr3pjus>div:nth-child(4) {
+  transform: rotate(135deg);
+  transform-origin: 58px 142px;
+}
+
+.ldio-3kngbr3pjus div:nth-child(5)>div {
+  left: 28px;
+  top: 88px;
+  animation-delay: -0.375s;
+}
+
+.ldio-3kngbr3pjus>div:nth-child(5) {
+  transform: rotate(180deg);
+  transform-origin: 40px 100px;
+}
+
+.ldio-3kngbr3pjus div:nth-child(6)>div {
+  left: 46px;
+  top: 46px;
+  animation-delay: -0.25s;
+}
+
+.ldio-3kngbr3pjus>div:nth-child(6) {
+  transform: rotate(225deg);
+  transform-origin: 58px 58px;
+}
+
+.ldio-3kngbr3pjus div:nth-child(7)>div {
+  left: 88px;
+  top: 28px;
+  animation-delay: -0.125s;
+}
+
+.ldio-3kngbr3pjus>div:nth-child(7) {
+  transform: rotate(270deg);
+  transform-origin: 100px 40px;
+}
+
+.ldio-3kngbr3pjus div:nth-child(8)>div {
+  left: 130px;
+  top: 46px;
+  animation-delay: 0s;
+}
+
+.ldio-3kngbr3pjus>div:nth-child(8) {
+  transform: rotate(315deg);
+  transform-origin: 142px 58px;
+}
+
+.loadingio-spinner-spin-xtnfe5i1w2l {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.ldio-3kngbr3pjus {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+  /* see note above */
+}
+
+.ldio-3kngbr3pjus div {
+  box-sizing: content-box;
+}
+
+
+
+
+@media only screen and (min-width: 700px) and (max-width: 1366px) {
+
+  /* The style  */
+  .container__descargas {
+    width: 94%;
+    height: 550px;
+  }
+
+  /* style del navbar */
+
+  .container__navbar {
+    width: 50px;
+    height: 570px;
+  }
+
+  .container__navbar:hover {
+    width: 180px;
+    height: 570px;
+  }
+
+}
+
+
+
+/* Estilos para pantallas de PC de 24 pulgadas (más de 1366px hasta 1920px) */
+@media only screen and (min-width: 1367px) and (max-width: 1920px) {
+
+  /* The style  */
+  .container__descargas {
+    width: 96%;
+    height: 850px;
+    margin-top: 27px;
+  }
+
+  /* style del navbar */
+
+  .container__navbar {
+    width: 50px;
+    height: 870px;
+    margin-top: 27px;
+  }
+
+  .container__navbar:hover {
+    width: 180px;
+    height: 870px;
+    margin-top: 27px;
+  }
+
+}
